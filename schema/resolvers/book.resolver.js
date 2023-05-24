@@ -6,7 +6,7 @@ const bookQueryResolvers = {
       const { name } = args;
       try {
         const { data } = await axios.get(
-          `https://www.googleapis.com/books/v1/volumes?q=${name}-terms&key=AIzaSyDkzo5BRUkNKq02Md324-U75Jqv_U21DW4`
+          `https://www.googleapis.com/books/v1/volumes?q=${name}&key=AIzaSyDkzo5BRUkNKq02Md324-U75Jqv_U21DW4`
         );
         return data.items;
       } catch (error) {
