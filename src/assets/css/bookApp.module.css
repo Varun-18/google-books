@@ -1,0 +1,62 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+
+*{
+    font-family:"Roboto"; 
+}
+
+.Wrapper{
+    max-width: 1200px;
+    width: 100%;
+    margin: 20px auto;
+}
+
+.pdp_Wrapper{
+    text-align: left;
+    border: 1px solid #ddd;
+    border-radius: 15px;
+}
+
+
+.content{
+    display: flex;
+    flex-direction: column;
+}
+
+.content {
+    padding: 10px;
+    color: #333;
+}
+
+.description{
+    color: #333;
+}
+
+.image_container{
+    margin: 20px ;
+}
+
+.pdp_image{
+    width: 300px;
+    height: auto;
+}
+
+.pdp_details_table{
+    width: 80%;
+    /* padding: 20px; */
+    /* text-align: center; */
+    /* margin: 0 auto; */
+}
+
+.pdp_details_table tr td{
+    padding: 10px;
+    border-bottom: 1px solid #ddd;
+    border-width: 60%;
+} 
+
+.pdp_dynamic_data{
+    text-align: center;
+}
+
+.authors{
+    margin-left: 75%;
+}
