@@ -90,16 +90,24 @@ export const Serach = () => {
           display: "flex",
           justifyContent: "space-between",
           maxWidth: "1200px",
-          margin: "0 auto",
+          margin: "20px auto",
+          position: "relative",
         }}
       >
-        <FormControl fullWidth>
+        <FormControl
+        // sx={{
+        //   maxWidth: "200px",
+        //   minWidth: "150px",
+        //   position: "absolute",
+        //   left: "0",
+        // }}
+        >
           <InputLabel id="demo-simple-select-label">Sorting</InputLabel>
           <Select
             labelId="demo-simple-select-label"
             id="demo-simple-select"
             onChange={(event) => handleChange(event)}
-            sx={{ width: "32%" }}
+            sx={{ maxWidth: "200px", minWidth: "100px" }}
             // defaultValue={}
             label="Sorting"
           >
@@ -110,15 +118,22 @@ export const Serach = () => {
           </Select>
         </FormControl>
 
-        <FormControl fullWidth>
-          <InputLabel id="demo-simple-select-label2" sx={{ marginLeft: "68%" }}>
+        <FormControl
+          sx={{
+            maxWidth: "200px",
+            minWidth: "100px",
+            position: "absolute",
+            right: "0",
+          }}
+        >
+          <InputLabel id="demo-simple-select-label2" sx={{ right: "0" }}>
             Filter
           </InputLabel>
           <Select
             labelId="demo-simple-select-label2"
             id="demo-simple-select"
             onChange={(event) => filterFromBackend(event.target.value)}
-            sx={{ width: "32%", marginLeft: "68%" }}
+            // sx={{ width: "180px" }}
             defaultValue={filter}
             label="Filter"
           >
